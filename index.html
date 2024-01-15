@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Documentation</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav id="nav-bar">
+            <h1>Python Documentation</h1>
+            <ul>
+                <li><a class="nav-link" href="#introduction_to_python">Introduction to Python</a></li>
+                <li><a class="nav-link" href="#hello_world">Hello World</a></li>
+                <li><a class="nav-link" href="#variables">Variables</a></li>
+                <li><a class="nav-link" href="#data_types">Data Types</a></li>
+                <li><a class="nav-link" href="#conditional_statements">Conditional Statements</a></li>
+                <li><a class="nav-link" href="#loops">Loops</a></li>
+                <li><a class="nav-link" href="#reference">Reference</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="introduction_to_python">
+            <h2>Introduction to Python</h2>
+            <article>
+                <p>
+                    Python is a versatile and powerful programming language that has gained widespread popularity for
+                    its simplicity, readability, and flexibility.
+                    Created by Guido van Rossum and first released in 1991, Python was designed with an emphasis on code
+                    readability, allowing developers to express
+                    concepts in fewer lines of code than languages like C++ or Java. Its syntax is clean and easy to
+                    understand, making it an ideal choice for beginners
+                    and experienced developers alike. Python supports multiple programming paradigms, including
+                    procedural, object-oriented, and functional programming,
+                    making it adaptable to various application domains.
+                </p>
+                <p>
+                    One of Python's key strengths lies in its extensive standard library, which provides a rich set of
+                    modules and packages, enabling developers to
+                    accomplish a wide range of tasks without having to write code from scratch. This ecosystem of
+                    pre-built tools and utilities enhances productivity
+                    and accelerates the development process. Python's cross-platform compatibility further contributes
+                    to its popularity, allowing developers to write
+                    code that can run seamlessly on different operating systems without modification. As a result,
+                    Python has become a go-to language for a diverse
+                    range of applications, from web development and data science to artificial intelligence and
+                    automation.
+                </p>
+                <p>
+                    The Python community plays a vital role in the language's success, fostering a collaborative and
+                    supportive environment. The availability of
+                    numerous third-party libraries and frameworks, such as Django for web development, NumPy for
+                    scientific computing, and TensorFlow for machine learning,
+                    underscores the vibrant ecosystem that has evolved around Python. With its widespread adoption in
+                    industry and academia, Python continues to be a
+                    driving force in shaping the landscape of modern software development.
+                </p>
+            </article>
+        </section>
+        <section id="hello_world">
+            <h2>Hello World</h2>
+            <article>
+                <p>
+                    To get started with writing Python, open your preferred Python environment and write your first
+                    "Hello world" Python code:
+                </p>
+                <pre>
+                    <code>
+        def greet_me(your_name):
+            print("Hello " + your_name)
+        
+        greet_me("World")
+                    </code>
+                </pre>
+                <p>
+                    Run the code in your Python environment to see the output!
+                </p>
+            </article>
+        </section>
+        <section id="variables">
+            <h2>Variables</h2>
+            <article>
+                <p>
+                    In Python, variables are used to store and manage data. Unlike some other programming languages,
+                    Python is dynamically typed, meaning you don't need to explicitly declare the data type of a
+                    variable.
+                </p>
+                <p>
+                    To create a variable, you simply assign a value to it using the equal sign (=). Here's an example:
+                </p>
+                <pre>
+                    <code>
+    # Creating variables
+    name = "John"
+    age = 25
+    is_student = True
+                    </code>
+                </pre>
+                <p>
+                    In the example above, we've created three variables: <code>name</code>, <code>age</code>, and
+                    <code>is_student</code>.
+                    The variable <code>name</code> stores a string, <code>age</code> stores an integer, and
+                    <code>is_student</code> stores a boolean value.
+                </p>
+                <p>
+                    Variables can be used in various operations and are fundamental to performing tasks and storing
+                    information in Python programs.
+                </p>
+            </article>
+        </section>
+        <section id="data_types">
+            <h2>Data types</h2>
+            <article>
+                <p>
+                    Python supports several built-in data types that allow you to represent different kinds of values in
+                    your programs.
+                    Here are some common data types in Python:
+                </p>
+                <ul>
+                    <li><strong>Integers:</strong> Whole numbers without a fractional component. Example:
+                        <code>42</code>
+                    </li>
+                    <li><strong>Floats:</strong> Numbers that have a decimal point or are represented in scientific
+                        notation. Example: <code>3.14</code></li>
+                    <li><strong>Strings:</strong> Sequences of characters, enclosed in single or double quotes. Example:
+                        <code>"Hello, Python!"</code>
+                    </li>
+                    <li><strong>Booleans:</strong> Represents the truth values <code>True</code> or <code>False</code>.
+                    </li>
+                    <li><strong>Lists:</strong> Ordered and mutable sequences of elements. Example:
+                        <code>[1, 2, 3]</code>
+                    </li>
+                    <li><strong>Tuples:</strong> Ordered and immutable sequences of elements. Example:
+                        <code>(1, 2, 3)</code>
+                    </li>
+                    <li><strong>Dictionaries:</strong> Unordered collections of key-value pairs. Example:
+                        <code>{"key": "value"}</code>
+                    </li>
+                </ul>
+                <p>
+                    Python's dynamic typing allows variables to change their data type during runtime.
+                    You can perform operations and manipulate data based on these data types to achieve various tasks in
+                    your programs.
+                </p>
+            </article>
+        </section>
+        <section id="conditional_statements">
+            <h2>Conditional statements</h2>
+            <article>
+                <p>
+                    Conditional statements allow your Python program to make decisions and execute different code blocks
+                    based on specified conditions.
+                    The main types of conditional statements in Python are <code>if</code>, <code>elif</code> (else if),
+                    and <code>else</code>.
+                </p>
+                <p>
+                    Here's a simple example using an <code>if</code> statement:
+                </p>
+                <pre>
+                    <code>
+    # Example using if statement
+    age = 18
+    
+    if age >= 18:
+        print("You are eligible to vote.")
+    else:
+        print("You are not eligible to vote.")
+                    </code>
+                </pre>
+                <p>
+                    In the example above, the program checks whether the variable <code>age</code> is greater than or
+                    equal to 18.
+                    If the condition is true, it executes the code block under the <code>if</code> statement; otherwise,
+                    it executes the code block under <code>else</code>.
+                </p>
+                <p>
+                    You can use <code>elif</code> for additional conditions between <code>if</code> and
+                    <code>else</code> if needed.
+                </p>
+                <pre>
+                    <code>
+    # Example using if, elif, and else statements
+    score = 75
+    
+    if score >= 90:
+        print("Excellent!")
+    elif score >= 70:
+        print("Good job!")
+    else:
+        print("Try again next time.")
+                    </code>
+                </pre>
+                <p>
+                    Conditional statements are essential for creating dynamic and responsive programs that can adapt to
+                    different situations.
+                </p>
+            </article>
+        </section>
+        <section id="loops">
+            <h2>Loops</h2>
+            <article>
+                <p>
+                    Loops in Python allow you to repeatedly execute a block of code. One common type of loop is the
+                    <code>while</code> loop.
+                </p>
+                <p>
+                    The <code>while</code> loop continues to execute as long as a specified condition is true. Here's a
+                    simple example:
+                </p>
+                <pre>
+                    <code>
+    # Example using while loop
+    count = 0
+    
+    while count < 5:
+        print("Count:", count)
+        count += 1
+                    </code>
+                </pre>
+                <p>
+                    In the example above, the <code>while</code> loop prints the value of <code>count</code> as long as
+                    it is less than 5.
+                    The loop continues to execute until the condition becomes false.
+                </p>
+                <p>
+                    Another type of loop is the <code>for</code> loop, which iterates over a sequence (such as a list or
+                    string).
+                </p>
+                <pre>
+                    <code>
+    # Example using for loop
+    numbers = [1, 2, 3, 4, 5]
+    
+    for num in numbers:
+        print("Number:", num)
+                    </code>
+                </pre>
+                <p>
+                    The <code>for</code> loop in this example iterates over the list of numbers and prints each number.
+                </p>
+                <p>
+                    Loops are powerful tools for automating repetitive tasks and processing sequences of data.
+                </p>
+            </article>
+        </section>
+        <section id="reference">
+            <header>
+                <h2>Reference</h2>
+            </header>
+            <article>
+                <p>
+                    Below are some key resources for further learning and reference in Python:
+                </p>
+                <ul>
+                    <li>
+                        <a href="https://www.python.org/" target="_blank" rel="noopener noreferrer">Official Python
+                            Website</a>
+                    </li>
+                    <li>
+                        <a href="https://docs.python.org/3/" target="_blank" rel="noopener noreferrer">Python
+                            Documentation</a>
+                    </li>
+                    <li>
+                        <a href="https://www.learnpython.org/" target="_blank" rel="noopener noreferrer">Learn
+                            Python</a>
+                    </li>
+                    <li>
+                        <a href="https://realpython.com/" target="_blank" rel="noopener noreferrer">Real Python</a>
+                    </li>
+                </ul>
+                <p>
+                    Explore these resources to deepen your understanding of Python programming and its various aspects.
+                </p>
+            </article>
+        </section>
+    </main>
+</body>
+
+</html>
