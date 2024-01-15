@@ -88,6 +88,15 @@ pre {
     overflow: auto;
 }
 
+#reference a {
+    color: #333;
+    text-decoration: none;
+}
+
+#reference a:hover {
+    text-decoration: underline;
+}
+
 /* Responsive Styles */
 @media (max-width: 768px) {
     #nav-bar {
